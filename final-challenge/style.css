@@ -12,7 +12,7 @@ body {
 
 section,
 footer {
-  padding: 2em 0;
+  padding: 6em 0;
 }
 
 h2, h3, h5, h6 {
@@ -74,7 +74,7 @@ header {
 .header-button,
 .sec1-button {
   background-color: #A59678;
-  padding: 0.2em 0.6em;
+  padding: 0.2em clamp(0.6em, 2vw, 1.5em);
   border-radius: 50px;
 }
 
@@ -146,7 +146,8 @@ a,
   margin-bottom: 1em;
 }
 
-.footer-col {
+.footer-col,
+.footer-link {
   margin: 1em 0;
 }
 
@@ -162,6 +163,71 @@ a,
   text-align: left;
 }
 
-.footer-link {
-  margin: 1em 0;
+
+@media (min-width: 700px) {
+  .header-links {
+    margin-left: auto;
+    gap: 3em;
+  }
+
+  .header-link + .header-link{
+    margin-left: 2em;
+  }
+
+  .sec3-col {
+    display: flex;
+    gap: 1em;
+  }
+}
+
+@media (min-width: 1000px) {
+  .section-1,
+  .footer-container {
+    text-align: left;
+  }
+
+  .container {
+    flex-direction: row;
+  }
+
+  .sec1-container,
+  .sec3-container {
+    gap: 6em;
+  }
+
+  .sec2-container {
+    text-align: center;
+    gap: 8em;
+  }
+
+  .sec3-col {
+    flex-direction: column;
+  }
+
+  .footer-container {
+    gap: 4em;
+  }
+
+  .footer-about {
+    width: 40%;
+  }
+
+  .footer-links {
+    display: flex;
+    gap: 4.5em;
+  }
+
+  .footer-title {
+    margin-bottom: 0.3em;
+  }
+
+  .footer-link {
+    margin: 1.5em 0 0;
+  }
+
+  /* que hp remiendo mas feo...porque no funciona .footer-col?? fucking css :D */
+  .footer-col,
+  .footer-col + .footer-col {
+    margin: 0;
+  }
 }
