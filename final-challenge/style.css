@@ -1,0 +1,167 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  min-width: 0;
+}
+
+body {
+  font-family: 'Oswald';
+  font-weight: 700;
+}
+
+section,
+footer {
+  padding: 2em 0;
+}
+
+h2, h3, h5, h6 {
+  color: #A59678;
+}
+
+a {
+  text-decoration: none;
+  width: fit-content;
+}
+
+p,
+.footer-link {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  color: #6F737F;
+  margin: 2em 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.header-container,
+.header-links,
+.container,
+.footer-col {
+  display: flex;
+}
+
+.container,
+.footer-col {
+  flex-direction: column;
+}
+
+.container,
+.header-container {
+  max-width: 1200px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  font-size: clamp(0.3rem, 3.3vw, 1.125rem);
+  background-color: #2E323F;
+  padding: 1em 0;
+}
+
+.header-links {
+  margin-left: 10px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header-links-2 {
+  margin-left: 6px;
+}
+
+.header-button,
+.sec1-button {
+  background-color: #A59678;
+  padding: 0.2em 0.6em;
+  border-radius: 50px;
+}
+
+.sec1-button {
+  font-size: clamp(1rem, 5vw, 1.5rem);
+}
+
+.header-button {
+  margin-left: 3px;
+}
+
+.sec1-title {
+  font-size: clamp(1.6rem, 5vw, 5.625rem);
+  line-height: 1.1;
+  color: #fff;
+}
+
+.section-1,
+.row,
+footer {
+  background-color: #3B4050;
+  text-align: center;
+}
+
+a,
+.sec1-p,
+.row-p {
+  color: #e0e0e2;
+}
+
+.sec1-p {
+  font-size: clamp(1.13rem, 2.5vw, 1.5rem);
+}
+
+.section-2 {
+  background-color: #f1f1f1;
+}
+
+.sec2-title {
+  font-size: clamp(1.5rem, 5vw, 1.875rem);
+}
+
+.sec2-p,
+.row-p {
+  font-size: clamp(0.9rem, 3vw, 1.125rem);
+}
+
+.sec3-title {
+  font-size: clamp(1.3rem, 5vw, 2.25rem);
+}
+
+.sec3-p {
+  font-size: clamp(1.1rem, 5vw, 1.313rem);
+}
+
+.row {
+  margin-top: 20px;
+  padding: 1em;
+}
+
+.row-title {
+  color: #fff;
+  font-size: clamp(1.5rem, 5vw, 1.875rem);
+}
+
+.footer-header {
+  font-size: clamp(1.9rem, 5vw, 3.5rem);
+  color: #fff;
+  margin-bottom: 1em;
+}
+
+.footer-col {
+  margin: 1em 0;
+}
+
+.footer-col + .footer-col {
+  margin-top: 2em;
+}
+
+.footer-title {
+  font-size: clamp(1.2rem, 5vw, 1.313rem);
+}
+
+.footer-links {
+  text-align: left;
+}
+
+.footer-link {
+  margin: 1em 0;
+}
