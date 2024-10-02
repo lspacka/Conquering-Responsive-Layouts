@@ -101,7 +101,9 @@ footer {
 
 a,
 .sec1-p,
-.row-p {
+.row-p,
+.footer-p,
+.footer-link {
   color: #e0e0e2;
 }
 
